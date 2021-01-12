@@ -3,7 +3,7 @@ import { Observable } from "rxjs";
 
 @Component({
   templateUrl: "openstreetmap.container.html",
-  styleUrls: ["openstreetmap.container.css"],
+  styleUrls: ["openstreetmap.container.scss"],
   selector: "osm-container",
   changeDetection: ChangeDetectionStrategy.OnPush
 })

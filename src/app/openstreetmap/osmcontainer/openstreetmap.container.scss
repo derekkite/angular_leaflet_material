@@ -1,9 +1,8 @@
 
 .fullscreen {
-  width: 98%;
-  height: 100%;
-  position: fixed;
-
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
 }
 
 .flex-container {

@@ -4,7 +4,7 @@ import {addDays, subDays} from 'date-fns';
 
 @Component({
     templateUrl: 'dayselect.component.html',
-    styleUrls: ['dayselect.component.css'],
+    styleUrls: ['dayselect.component.scss'],
     selector: 'day-select',
     changeDetection: ChangeDetectionStrategy.OnPush
 })

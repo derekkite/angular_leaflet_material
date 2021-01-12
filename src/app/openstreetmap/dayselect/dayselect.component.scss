@@ -9,3 +9,11 @@ input {
   cursor: pointer;
   width: 250px;
 }
+
+.flex-container {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
