@@ -1,0 +1,13 @@
+.map {
+  height: 400px;
+  width: 100%;
+}
+
+.displayflex {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+

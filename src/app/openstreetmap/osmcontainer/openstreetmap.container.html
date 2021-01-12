@@ -1,0 +1,52 @@
+<mat-card class="fullscreen">
+  <mat-card-header class="flex-container">
+    <day-select [day]="day$ | async"></day-select>
+    <button mat-fab >
+      <mat-icon>cloud_upload</mat-icon>
+    </button>
+  </mat-card-header>
+    <openstreetmap></openstreetmap>
+
+</mat-card>
+
+
+
+<!--<mat-card class="fullscreen" style="display: flex; flex-direction: column"">-->
+<!--<mat-card-header class="flex-container">-->
+<!--  <day-select [day]="day$ | async"></day-select>-->
+<!--  <button mat-fab (click)="upload()">-->
+<!--    <mat-icon>cloud_upload</mat-icon>-->
+<!--  </button>-->
+<!--</mat-card-header>-->
+<!--<div style="flex-grow: 1;">-->
+<!--  <router-outlet></router-outlet>-->
+<!--</div>-->
+<!--</mat-card>-->
+<!--The problem I think u have is the following:-->
+
+<!--<mat-card class="fullscreen>-->
+<!--  <mat-card-header class="flex-container">-->
+<!--...-->
+<!--</mat-card-header>-->
+<!--<router-outlet></router-outlet>-->
+<!--</mat-card>-->
+
+<!--ends up like-->
+<!--<mat-card class="fullscreen>-->
+<!--  <mat-card-header class="flex-container">-->
+<!--...-->
+<!--</mat-card-header>-->
+<!--<div class="map">...</div>-->
+<!--</mat-card>-->
+
+<!--<mat-card class="fullscreen" style="display: flex; flex-direction: column"">-->
+<!--<mat-card-header class="flex-container">-->
+<!--  <day-select [day]="day$ | async"></day-select>-->
+<!--  <button mat-fab (click)="upload()">-->
+<!--    <mat-icon>cloud_upload</mat-icon>-->
+<!--  </button>-->
+<!--</mat-card-header>-->
+<!--<div style="flex-grow: 1;">-->
+<!--  <router-outlet></router-outlet>-->
+<!--</div>-->
+<!--</mat-card>-->

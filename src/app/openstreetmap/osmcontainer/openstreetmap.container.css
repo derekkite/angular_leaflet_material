@@ -1,0 +1,14 @@
+
+.fullscreen {
+  width: 98%;
+  height: 100%;
+  position: fixed;
+
+}
+
+.flex-container {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+}
+
