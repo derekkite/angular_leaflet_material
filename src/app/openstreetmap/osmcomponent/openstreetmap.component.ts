@@ -12,7 +12,7 @@ import {toMarker} from '../../DateServices';
 
 @Component({
     templateUrl: 'openstreetmap.component.html',
-    styleUrls: ['openstreetmap.component.css'],
+    styleUrls: ['openstreetmap.component.scss'],
     selector: 'openstreetmap',
     changeDetection: ChangeDetectionStrategy.OnPush
 })
