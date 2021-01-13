@@ -6,13 +6,14 @@ import {Observable, of} from 'rxjs';
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import {CollectionId} from '../../documentid';
 import {LocationTable} from '../../location.model';
+import {daylocationdata} from "./daylocationdata";
 
 
 
 @Component({
   selector: 'daylocation-component',
   templateUrl: './daylocation.table.component.html',
-  styleUrls: ['./daylocation.table.component.css'],
+  styleUrls: ['./daylocation.table.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   animations: [
     trigger('detailExpand', [
@@ -94,7 +95,7 @@ export class LocationTableDataSource extends DataSource<LocationTable> {
 
   /** Connect function called by the table to retrieve one stream containing the data to render. */
   connect(): Observable<LocationTable[]> {
-    return of([]);
+    return of(daylocationdata);
   }
 
   disconnect() {

@@ -43,6 +43,6 @@ export interface LocationTable {
   duration: string;
   type: string;
   business?: string;
-  center: Point;
-  bounds: GeoBounds;
+  center?: Point;
+  bounds?: GeoBounds;
 }

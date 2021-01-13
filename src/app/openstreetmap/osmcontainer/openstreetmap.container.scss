@@ -8,6 +8,23 @@
 .flex-container {
   display: -webkit-flex;
   display: flex;
-  justify-content: stretch;
+  flex-basis: 100%;
+  align-items: stretch;
 }
 
+.dayselect {
+  display: flex;
+  align-self: stretch;
+}
+
+.filler {
+  display: flex;
+  margin-right: auto;
+}
+
+
+.uploadbutton {
+  display: flex;
+  margin-left: auto;
+
+}

@@ -1,8 +1,4 @@
 
-.fileselect-container {
-    max-height: 500px;
-    min-width: 1000px;
-}
 
 table{
   width: 100%;
@@ -119,4 +115,10 @@ tr.example-element-row:not(.example-expanded-row):active {
 .expandedrow-detail {
   overflow: hidden;
   display: flex;
+}
+
+.location-table-container {
+  position: relative;
+  max-height: 80vh;
+  overflow: auto;
 }

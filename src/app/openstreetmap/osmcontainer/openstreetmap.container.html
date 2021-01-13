@@ -1,10 +1,13 @@
 <mat-card>
     <mat-card-header>
         <div class="flex-container">
-            <day-select [day]="day$ | async"></day-select>
+            <div class="filler"></div>
+            <day-select [day]="day$ | async" class="dayselect"></day-select>
+            <div class="uploadbutton">
             <button mat-fab>
                 <mat-icon>cloud_upload</mat-icon>
             </button>
+            </div>
         </div>
     </mat-card-header>
     <openstreetmap></openstreetmap>

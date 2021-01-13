@@ -1,17 +1,19 @@
-<div class="displayflex">
 <mat-card-content>
-  <div *ngIf="center | async" style="flex-basis:55%; flex-grow: 1">
+    <div class="displayflex">
+        <div *ngIf="center | async" class="map-flex">
 
-    <div *ngIf="ready" class="map"
-         leaflet
-         [leafletOptions]="options"
-         (leafletMapReady)="onMapReady($event)"
-         [leafletLayers]="markers | async"
-         [leafletFitBounds]="bounds | async"
-         [leafletFitBoundsOptions]="fitbounds"
-    >
+            <div *ngIf="ready" class="map"
+                 leaflet
+                 [leafletOptions]="options"
+                 (leafletMapReady)="onMapReady($event)"
+                 [leafletLayers]="markers | async"
+                 [leafletFitBounds]="bounds | async"
+                 [leafletFitBoundsOptions]="fitbounds"
+            >
+            </div>
+        </div>
+        <div class="locationtable-flex">
+            <daylocation-component class="ltable"></daylocation-component>
+        </div>
     </div>
-  </div>
-  <daylocation-component style="flex-basis: 45%"></daylocation-component>
 </mat-card-content>
-</div>

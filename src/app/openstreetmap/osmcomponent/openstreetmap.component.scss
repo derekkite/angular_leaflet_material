@@ -1,13 +1,36 @@
 .map {
-  height: 400px;
+  height: 80vh;
   width: 100%;
 }
 
 .displayflex {
   display: -webkit-flex;
   display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+  flex-basis: 100%;
+  flex-direction: row;
+  margin: 10px;
 }
 
 
+.map-flex {
+  display: flex;
+  align-self: start;
+  flex-basis: 100%;
+  flex-grow: inherit;
+  margin: 5px;
+
+}
+
+.locationtable-flex {
+  display: flex;
+  align-self: end;
+  max-width: 50vh;
+  flex-basis: 100%;
+  margin: 5px;
+}
+
+.ltable {
+  height: 80vh;
+  width: 100%;
+
+}
